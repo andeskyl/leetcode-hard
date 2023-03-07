@@ -11,7 +11,8 @@ public:
             for (int i = 0; i < m; i++) {
                 int current = toVisit.front();
                 toVisit.pop();
-                if (current == n - 1) return res;
+                if (current == n - 1) 
+					return res;
                 indices[arr[current]].push_back(current + 1);
                 indices[arr[current]].push_back(current - 1);
                 for (int j : indices[arr[current]]) {
