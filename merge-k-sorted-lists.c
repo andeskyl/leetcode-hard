@@ -10,7 +10,7 @@ struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2) {
     *current = !list1 ? list2 : list1;
     return head;
 }
-struct ListNode* mergeKLists(struct ListNode** lists, int listsSize){
+struct ListNode* mergeKLists(struct ListNode** lists, int listsSize) {
     if (!listsSize) return NULL;
     else if (listsSize == 1) return lists[0];
     int mid = listsSize >> 1;
