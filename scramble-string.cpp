@@ -4,7 +4,7 @@ public:
     bool isScramble(string s1, string s2) {
         if (s1 == s2) return true;
         if (isScramble_res.find(s1 + '/' + s2) != isScramble_res.end())
-            return isScramble_res[s1 + '/' + s2];
+            return false;
         int count[26] = {0}, len = s1.length();
         for (int i = 0; i < len; i++) {
             count[s1[i] - 'a']++;
