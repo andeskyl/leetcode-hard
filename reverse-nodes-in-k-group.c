@@ -8,7 +8,6 @@ struct ListNode* reverseSublist(struct ListNode* head, int k) {
     }
     return newHead;
 }
-
 struct ListNode* reverseKGroup(struct ListNode* head, int k) {
     if (k == 1) return head;
     struct ListNode* newHead = NULL, *lastSublistEnd = NULL, *sublistHead = head, *newSublistHead = NULL;
