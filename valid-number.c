@@ -4,7 +4,7 @@ bool isNumber(char* s){
         if (isdigit(*s)) is_valid = true;
         else if ((*s == '+' || *s == '-') && (!after_first || s[-1] == 'e' || s[-1] == 'E'));
         else if (*s == '.' && !after_dot && !after_e) after_dot = true;
-        else if ((*s == 'e' || *s == 'E') && is_valid && !after_e && after_first && (isdigit(s[-1]) || s[-1] == '.')) {
+        else if ((*s == 'e' || *s == 'E') && is_valid && !after_e) {
             after_e = true;
             is_valid = false;
         } else return false;
