@@ -1,4 +1,4 @@
-#define max(a, b) ({ __typeof__ (a) _a = (a); __typeof__ (b) _b = (b); _a > _b ? _a : _b; })
+#define max(a, b) ({__typeof__ (a) _a = (a); __typeof__ (b) _b = (b); _a > _b ? _a : _b;})
 int gcdMem[14][14] = {0};
 int gcd(int a, int b) {return b == 0 ? a : gcd(b, a % b);}
 int gcdWithMem(int a, int b) {return gcdMem[a][b] > 0 ? gcdMem[a][b] : gcd(a, b);}
