@@ -1,7 +1,5 @@
 #define max(a, b) ({__typeof__ (a) _a = (a); __typeof__ (b) _b = (b); _a > _b ? _a : _b;})
-int gcdMem[14][14] = {0};
 int gcd(int a, int b) {return b == 0 ? a : gcd(b, a % b);}
-int gcdWithMem(int a, int b) {return gcdMem[a][b] > 0 ? gcdMem[a][b] : gcd(a, b);}
 int getMaxScore(int* nums, int numsSize, int* ms, int step, unsigned short used) {
     if (ms[used] > 0) return ms[used];
     else if (step > numsSize / 2) return 0;
