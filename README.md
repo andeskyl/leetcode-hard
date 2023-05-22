@@ -10,6 +10,7 @@ My solution for Leetcode hard problems.
 - [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
 - [52. N-Queens II](https://leetcode.com/problems/n-queens-ii/)
 - [72. Edit Distance](https://leetcode.com/problems/edit-distance/)
+- [135. Candy](https://leetcode.com/problems/candy/)
 - [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 - [878. Nth Magical Number](https://leetcode.com/problems/nth-magical-number/)
 - [1036. Escape a Large Maze](https://leetcode.com/problems/nth-magical-number/)
