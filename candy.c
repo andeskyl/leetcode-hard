@@ -10,10 +10,9 @@ int candy(int* ratings, int ratingsSize) {
         } else {
             int n = max(up_count, down_count), k = min(up_count, down_count);
             res += (n + 2) * (n + 1) / 2 + k * (k + 1) / 2 - 1;
-            if (ratings[i] == ratings[i - 1]) {
-                up_count = 0, res++;
-            } else up_count = 1;
-            down_count = 0, dir = 1;
+            up_count = 0, down_count = 0, dir = 1;
+            if (ratings[i] == ratings[i - 1]) res++;
+            else up_count++;
         }
     }
     int n = max(up_count, down_count), k = min(up_count, down_count);
